@@ -4,8 +4,8 @@ import logging
 import os
 
 # Project level imports
-from api_funcs.s1 import test_logging
-from api_funcs.s2 import more_testing
+from api.s1 import test_logging
+from api.s2 import more_testing
 
 # Time and path data for naming the log file
 time_now = datetime.datetime.now()
