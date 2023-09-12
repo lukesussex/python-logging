@@ -1,5 +1,6 @@
 import logging
 
+
 def more_testing():
     logging.debug("s2 debug")
     logging.info("s2 info")

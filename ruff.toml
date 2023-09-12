@@ -1,0 +1,20 @@
+# Enable pycodestyle (`E`), Pyflakes (`F`), pycodestyle warnings (`W`) and flake8-bugbear (`B`) rules
+# https://beta.ruff.rs/docs/rules/
+select = ["E", "F", "W", "B"]
+# select = ["ALL"]
+
+# Extra rules to enable (https://beta.ruff.rs/docs/faq/#what-is-the-nursery)
+# E225: Missing whitespace around operator
+# E231: Missing whitespace after '{token}'
+extend-select = ["E225", "E231"]
+
+# Ignore rules
+# E501: Line too long ({width} > {limit} characters)
+# ignore = ["E501"]
+
+# Same as Black.
+line-length = 150
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []

@@ -3,7 +3,6 @@ import datetime
 import logging
 import os
 
-# Project level imports
 from api.s1 import test_logging
 from api.s2 import more_testing
 
@@ -36,3 +35,34 @@ test_logging()
 more_testing()
 
 logging.info("end")
+
+
+def sub(x, y):
+    if x == 10:
+        print(10)
+    return x-y
+
+
+print("abc")
+
+long_list = ["this", "list", "contains", "too", "many", "elements", "for", "one", "line"]
+
+# # example 1
+# def f(myvar):
+#     return myva * 2
+
+# # example 2 - ruff - Function definition does not bind loop variable `i`
+# def make_three_adders():
+#     result = []
+#     for i in [10, 20, 30]:
+#         def add(x):
+#             return x + i
+#         result.append(add)
+#     return result
+# for adder in make_three_adders():
+#     print(adder(7))
+
+print(0)
+def func():
+    print(1)
+func()
