@@ -1,17 +1,19 @@
 # Configure linting rules in `ruff.toml` (this file)
-# Lint files in repo `ruff check .`
-# Fix linting errors: `ruff check . --fix`
-# To sort imports run: `isort .`
+# Ensure you have the Ruff VS Code Extension installed: https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+# Lint files in repo: `ruff check .`
+# Fix linting errors that can be done automatically: `ruff check . --fix`
+# Sort imports: `isort .`
 
-# Enable pycodestyle (`E`), Pyflakes (`F`), pycodestyle warnings (`W`) and flake8-bugbear (`B`) rules
+# Enable rules: pycodestyle (E), Pyflakes (F), pycodestyle warnings (W), flake8-bugbear (B), quotes (Q), imports (I), pydocstyle (D) and flake8-bandit (S)
 # https://beta.ruff.rs/docs/rules/
-select = ["E", "F", "W", "B"]
+select = ["E", "F", "W", "B", "Q", "I", "D", "S"]
 # select = ["ALL"]
 
 # Extra rules to enable (https://beta.ruff.rs/docs/faq/#what-is-the-nursery)
 # E225: Missing whitespace around operator
 # E231: Missing whitespace after '{token}'
-extend-select = ["E225", "E231"]
+# UP032: Use f-string instead of format call
+extend-select = ["E225", "E231", "UP032"]
 
 # Ignore rules
 # E501: Line too long ({width} > {limit} characters)
