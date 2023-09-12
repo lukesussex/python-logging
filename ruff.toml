@@ -12,7 +12,6 @@ extend-select = ["E225", "E231"]
 # E501: Line too long ({width} > {limit} characters)
 ignore = ["E501"]
 
-# Same as Black.
 line-length = 150
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
