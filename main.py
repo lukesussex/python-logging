@@ -9,7 +9,7 @@ from api.s2 import more_testing
 # Time and path data for naming the log file
 time_now = datetime.datetime.now()
 timestamp = time_now.strftime("%Y%m%d-%H%M%S")
-path_file_log = os.path.join(os.path.dirname(__file__), "{}_use_api_to_clone_log_file.log".format(timestamp))  # create the log file in this repo
+path_file_log = os.path.join(os.path.dirname(__file__), f"{timestamp}_use_api_to_clone_log_file.log")  # create the log file in this repo
 
 # Configure base logger settings
 formatter_log = logging.Formatter("%(levelname)8s: %(message)s")
